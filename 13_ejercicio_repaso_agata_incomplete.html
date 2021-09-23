@@ -48,6 +48,23 @@
                 console.log(j+" "+ arraycounter[j])
         }
     }   
+        
+        
+    //-------------------------------
+         let elevenPositionArray = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        let askedNumber;
+
+        do {
+            askedNumber = prompt("Give me a number between 0 and 10");
+            if (askedNumber > 10 || askedNumber === "") {
+                alert("That's not what I asked for");
+            } else {
+                if (askedNumber >= 0) {
+                    elevenPositionArray[askedNumber]++;
+                }
+            }
+        } while (askedNumber >= 0)
+        console.log(elevenPositionArray)
     </script>
 </body>
 
